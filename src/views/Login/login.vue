@@ -118,7 +118,7 @@ export default {
         this.isDisabled = true;
         this.isCountDownShow = true;
         await getSmsCode(this.user.mobile);
-        this.$toast.success("发送验证码成功");
+        this.$toast.success("发送验证码成功!");
       } catch (e) {
         this.$toast.fail(e.response.data.message || "错误");
         this.isCountDownShow = false;
